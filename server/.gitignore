@@ -9,7 +9,7 @@
 /coverage
 
 # misc
-server/.env
+.env
 .DS_Store
 .env.local
 .env.development.local
