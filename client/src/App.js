@@ -1,9 +1,12 @@
-import Home from './pages/Home';
+import HomePage from './pages/HomePage';
+import RecipeProvider from './contexts/recipeContext';
 
 function App() {
   return (
     <div >
-      <Home/>
+      <RecipeProvider>
+        <HomePage/>
+      </RecipeProvider>
     </div>
   );
 }

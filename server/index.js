@@ -9,11 +9,11 @@ const recipeRouter=require('./app/routes/recipe.route');
 
 const port = process.env.PORT || 8080;
 
-const corsOptions = {
-  origin: process.env.ORIGIN || 'http://localhost:8081',
-};
+// const corsOptions = {
+//   origin: process.env.ORIGIN || 'http://localhost:8081',
+// };
 
-app.use(cors(corsOptions));
+app.use(cors());
 
 //parse requests of content-type - application/json
 app.use(bodyParser.json());
